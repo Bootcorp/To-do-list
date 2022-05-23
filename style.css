@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Chakra+Petch&family=Comfortaa:wght@500&family=Comic+Neue:ital,wght@0,300;0,700;1,300;1,400&family=Grape+Nuts&family=Josefin+Sans:wght@400;500&family=Pacifico&family=Palette+Mosaic&family=Red+Hat+Mono:wght@600&family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 20%;
+}
+
+button {
+  margin: 10px;
+  width: 20vw;
+  height: 5vh;
+  border-radius: 10px;
+  border: none;
+  background: rgb(255, 221, 0);
+}
+
+#nouvelleTache {
+  width: 50vw;
+  background: yellow;
+  height: 5vh;
+  font-size: 1.5em;
+}
+
+.form-container {
+  height: 100%;
+
+  padding: 5px;
+  background: yellow;
+}
+
+.liste {
+  height: 100vh;
+}
+#newTache {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.868);
+  box-shadow: 8px 6px 15px black;
+  margin: 10px;
+  animation: apparition 0.5s ease-out;
+}
+
+#btn1:hover {
+  cursor: pointer;
+  background: purple;
+  color: aliceblue;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  background: rgb(0, 0, 0);
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  color: yellow;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: purple;
+  color: aliceblue;
+}
+
+p {
+  background: rgb(225, 212, 163);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disparition {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
